@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100hv;
+    width: 100vw;
+    background: linear-gradient(to bottom, #020521, #060e2c, #061537, #091942, #0c1e4e)fixed;
+}
+.cat-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+}
+/* Botoes de categoria */
+.button{
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.button0{
+    border: 2px solid white;
+}
+.button1{
+    background-color: transparent;
+    color: white;
+}
+.button1:hover{
+    background-color: white;
+    color: black;
+}
