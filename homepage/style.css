@@ -1,0 +1,59 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body{
+  height: 100hv;
+  width: 100vw;
+  background: linear-gradient(to bottom, #020521, #060e2c, #061537, #091942, #0c1e4e)fixed;
+}
+
+
+.img1 {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==================== NavBar start ======================== */
+
+.navbar-img {
+  margin: 0 0 0 48px;
+  padding: 2px;
+}
+
+.navbar-button-side {
+
+}
+
+.button-navbar {
+  background-color: transparent; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Remover a borda padrão do botão */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  font-size: 16px; /* Tamanho da fonte do botão */
+  cursor: pointer; /* Mudar o cursor para indicar que o botão é clicável */
+  position: relative; /* Necessário para posicionar a linha */
+}
+
+.button-navbar:hover::after {
+  content: ''; /* Conteúdo do pseudo-elemento */
+  position: absolute; /* Posicionamento absoluto em relação ao botão */
+  left: 0; /* Posicionar a linha no início do botão */
+  bottom: 0; /* Posicionar a linha na parte inferior do botão */
+  width: 100%; /* Largura da linha igual à largura do botão */
+  height: 2px; /* Altura da linha */
+  background-color: white; /* Cor da linha */
+}
+
+/* ==================== NavBar end ======================== */
+
+/* .gradiant {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(0deg ,rgba(2,0,36,1) 0%, rgba(6,6,6,0.8337710084033614) 50%, rgba(255,255,255,1) 100%);
+} */
