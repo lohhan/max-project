@@ -7,10 +7,15 @@
 
 body {
   height: 100vh;
-  background: black;
+  overflow-x: hidden;
   display: flex;
   flex-flow: column nowrap;
-  overflow: auto;
+  background: linear-gradient(
+  0deg, 
+  rgb(1, 0, 31) 70%, 
+  rgb(0, 1, 24) 80%, 
+  rgb(0, 0, 16) 100%)
+  fixed;
 }
 
 /* NAVBAR */
@@ -23,6 +28,7 @@ header {
   gap: 200px;
   display: flex;
   position: fixed; /* Fixa o cabeçalho na parte superior da página */
+  z-index: 1000;
 }
 
 .nav-bar {
@@ -88,38 +94,91 @@ header {
   max-width: 100%;
 }
 
-.wonka {
-  width: 100%;
-  position: absolute;
+.container-destaque{
+    position: relative; /* Adiciona posicionamento relativo para os elementos filhos com posicionamento absoluto */
+    background-image: url("/filmes/assets/wonka.webp");
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    object-fit: contain;
+    height: 700px;
 }
-#wonka-image {
-  mask-image: linear-gradient(to bottom, #000, 40%, rgba(0, 0, 0, 0.0014) 100%);
-}
-.movie-info {
-  width: 300px;
-  height: 400px;
-  position: absolute;
-  row-gap: 10px;
+
+.destaque-description {
+  position: relative; /* Adiciona posicionamento relativo */
   display: flex;
-  flex-direction: column;
+  gap: 15px;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: 18% 3%;
+  z-index: 2;
 }
 
-#wonka-logo {
-  width: 300px;
-  height: 170px;
+.destaque-description img {
+  width: 20%;
 }
 
-.indication {
-  width: 300px;
-  height: 24.4px;
+.description-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-#status-filme {
-  padding: 5px;
-  width: 30px;
+#status-filme{
+  border: 2px solid white;
+  padding: 2px 4px;
+  font-weight: bold;
+}
+
+.description-top img {
+  width: 20px;
+  border: 1px solid white;
+}
+
+#maindescription {
+  width: 40%;
   font-size: 20px;
-  border-style: solid;
-  border-color: white;
-  border-width: 2px;
-  font-size: 10px;
+  color: rgb(203, 203, 203);
+}
+
+.destaque-description a {
+  text-decoration: none;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(48, 48, 68);
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.destaque-fadebottom {
+  position: absolute; /* Posicionamento absoluto em relação ao contêiner .container-destaque */
+  bottom: 0; /* Alinha a div na parte inferior */
+  left: 0; /* Alinha a div à esquerda */
+  width: 100%; /* Largura igual à largura do contêiner */
+  height: 17rem; /* Altura da div fade-bottom */
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(0, 0, 0, 0.816),
+    #111
+  ); /* Gradiente para o efeito de fade na parte inferior */
+}
+
+.grid-container-filmes{
+  display: grid;
+  grid-template-columns:232px 232px 232px;
+  grid-template-rows: 30px 348px 348px 348px;
+  grid-template-areas: 
+  "title title title";
+  gap: 14px;
+  row-gap: 20px;
+  align-content: center;
+  justify-content: center;
+
+}
+h3{
+  grid-area: title;
 }
