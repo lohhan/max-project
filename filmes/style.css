@@ -13,6 +13,8 @@ body {
   overflow: auto;
 }
 
+/* NAVBAR */
+
 header {
   width: 100%;
   height: 70px;
@@ -21,7 +23,6 @@ header {
   gap: 200px;
   display: flex;
   position: fixed; /* Fixa o cabeçalho na parte superior da página */
-  z-index: 1000;/
 }
 
 .nav-bar {
@@ -83,76 +84,42 @@ header {
 }
 
 /* DESTAQUE */
-.container-destaque {
-  position: relative; /* Adiciona posicionamento relativo para os elementos filhos com posicionamento absoluto */
-  background-image: url("assets/rickandmorty.jpeg");
-  background-size: cover;
-  background-position: center center;
-  color: white;
-  object-fit: contain;
-  height: 650px;
+.container-destaque img {
+  max-width: 100%;
 }
 
-.destaque-description {
-  position: relative; /* Adiciona posicionamento relativo */
+.wonka {
+  width: 100%;
+  position: absolute;
+}
+#wonka-image {
+  mask-image: linear-gradient(to bottom, #000, 40%, rgba(0, 0, 0, 0.0014) 100%);
+}
+.movie-info {
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  row-gap: 10px;
   display: flex;
-  gap: 15px;
-  flex-flow: column nowrap;
-  justify-content: center;
-  margin: 18% 3%;
-  z-index: 2;
+  flex-direction: column;
 }
 
-.destaque-description img {
-  width: 30%;
+#wonka-logo {
+  width: 300px;
+  height: 170px;
 }
 
-.description-top {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.indication {
+  width: 300px;
+  height: 24.4px;
 }
 
-#newepisodes {
-  border: 2px solid white;
-  padding: 2px;
-  font-weight: bold;
-}
-
-.description-top img {
-  width: 20px;
-  border: 1px solid white;
-}
-
-#maindescription {
-  width: 40%;
+#status-filme {
+  padding: 5px;
+  width: 30px;
   font-size: 20px;
-  color: rgb(203, 203, 203);
-}
-
-.destaque-description a {
-  text-decoration: none;
-  width: 140px;
-  display: flex;
-  justify-content: center;
-  background-color: rgb(48, 48, 68);
-  padding: 15px;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-/* Estilos para a div com fade na parte inferior */
-.destaque-fadebottom {
-  position: absolute; /* Posicionamento absoluto em relação ao contêiner .container-destaque */
-  bottom: 0; /* Alinha a div na parte inferior */
-  left: 0; /* Alinha a div à esquerda */
-  width: 100%; /* Largura igual à largura do contêiner */
-  height: 17rem; /* Altura da div fade-bottom */
-  background-image: linear-gradient(
-    180deg,
-    transparent,
-    rgba(0, 0, 0, 0.8),
-    #111
-  ); /* Gradiente para o efeito de fade na parte inferior */
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  font-size: 10px;
 }
