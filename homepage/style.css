@@ -162,7 +162,6 @@ header {
   ); /* Gradiente para o efeito de fade na parte inferior */
 }
 
-
 /* TOP 5 */
 .container-top5 {
   margin: 2% 3%;
@@ -254,7 +253,7 @@ header {
 }
 
 .recentes-images img {
-  width: 180px;
+  width: 200px;
   border-radius: 5px;
   border: 3px solid transparent;
 }
