@@ -7,10 +7,15 @@
 
 body {
   height: 100vh;
-  background: black;
+  overflow-x: hidden;
   display: flex;
   flex-flow: column nowrap;
-  overflow: auto;
+  background: linear-gradient(
+  0deg, 
+  rgba(4,0,190,1) 0%, 
+  rgba(0,5,88,1) 0%, 
+  rgba(2,0,36,1) 100%)
+  fixed;
 }
 
 header {
@@ -90,7 +95,7 @@ header {
   background-position: center center;
   color: white;
   object-fit: contain;
-  height: 650px;
+  height: 740px;
 }
 
 .destaque-description {
@@ -99,7 +104,7 @@ header {
   gap: 15px;
   flex-flow: column nowrap;
   justify-content: center;
-  margin: 18% 3%;
+  margin: 21% 3%;
   z-index: 2;
 }
 
@@ -155,4 +160,105 @@ header {
     rgba(0, 0, 0, 0.8),
     #111
   ); /* Gradiente para o efeito de fade na parte inferior */
+}
+
+
+/* TOP 5 */
+.container-top5 {
+  margin: 2% 3%;
+  padding-bottom: 20px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.container-top5 .top5-title {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.top5-title h2{
+  color: rgba(2,0,36,1);
+  -webkit-text-stroke: 3px rgba(4,0,190,1);
+  font-size: 90px;
+  font-weight: 600;
+}
+
+.top5-title p{
+  font-size: 20px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+}
+
+.top5-series {
+  display: flex;
+  gap: 30px;
+}
+
+.top5-series div {
+  display: flex;
+}
+
+.top5-series p {
+  display: flex;
+  align-items: end;
+  font-size: 135px;
+  font-weight: 600;
+  color: rgba(2,0,36,1);
+  -webkit-text-stroke: 3px rgba(4,0,190,1);
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+
+.top5-series img {
+  max-width: 100%;
+  width: 160px;
+  z-index: 0;
+  border-radius: 5px;
+  border: 3px solid transparent;
+}
+
+.top5-series img:hover{
+  border: 3px solid white;
+}
+
+/* FILMES/SERIES RECENTES */
+
+.container-recentes {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 1% 3%;
+  font-family: "Roboto", sans-serif;
+}
+
+.container-recentes h2 {
+  font-size: 20px;
+  padding: 2px;
+}
+
+.container-recentes a {
+  text-decoration: none;
+  width: 160px;
+}
+
+.container-recentes .recentes-images {
+  display: flex;
+  gap: 40px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.recentes-images img {
+  width: 180px;
+  border-radius: 5px;
+  border: 3px solid transparent;
+}
+
+.recentes-images img:hover {
+  border: 3px solid white;
 }
