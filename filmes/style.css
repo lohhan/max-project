@@ -169,15 +169,22 @@ header {
 
 .grid-container-filmes{
   display: grid;
-  grid-template-columns:232px 232px 232px;
+  grid-template-columns: 232px 232px 232px 232px;
   grid-template-rows: 30px 348px 348px 348px;
   grid-template-areas: 
-  "title title title";
+  "title title title title";
   gap: 14px;
   row-gap: 20px;
   align-content: center;
   justify-content: center;
 
+}
+.grid-container-filmes a:hover{
+  border-style: solid;
+  border-color: aliceblue;
+  border-width: 2px;
+  padding: 2px;
+  border-radius: 5px;
 }
 h3{
   grid-area: title;
