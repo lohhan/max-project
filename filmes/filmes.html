@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies &#x2022 Max</title>
-    <link rel="stylesheet" href="/filmes/style.css">
+    <title>Series &#8226 Max</title>
+    <link rel=" stylesheet" href="/filmes/style.css">
+
+    <!-- fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-   <link rel="shortcut icon" href="../user/imgs/fav.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- --- -->
+
+    <link rel="shortcut icon" href="../user/imgs/fav.png" type="image/x-icon">
 </head>
 
 <body>
+    <!-- NAVBAR -->
     <header>
         <div id="logo-max">
             <a href="">
@@ -37,66 +46,64 @@
             <a href="">
                 <img id="img-size-save" src="/navbar-assets/save-image.svg">
             </a>
-            <a href="">
+            <a href="../index.html">
                 <img id="img-size-user" src="/navbar-assets/user-image.svg">
             </a>
         </div>
     </header>
-    
+
+    <!-- DESTAQUE -->
     <div class="container-destaque">
         <div class="destaque-description">
-           <img id="wonka-logo" src="/filmes/assets/wonka-logo.png" alt="">
-           <div class="description-top">
-              <p id="status-filme">Novo</p>
-           
-              <img src="/filmes/assets/a10.png" alt="">
-           
-              <p>2023</p>
-           </div>
-           <p id="maindescription">"Wonka" conta a história maravilhosa de como o maior inventor, mágico e chocolateiro do mundo se tornou o adorado Willy Wonka que conhecemos hoje.</p>
-           <a href="">Ir para o filme</a>
-    </div>
-    <div class="destaque-fadebottom"></div>
+            <img src="/filmes/assets/wonka-logo.png" alt="">
 
-    <div class="grid-container-filmes">
+            <div class="description-top">
+                <!-- <p id="newepisodes">Novos Episódios</p> -->
+                <img src="/filmes/assets/a10.png" alt="">
+                <p>2023</p>
+            </div>
+
+            <p id="maindescription">"Wonka" conta a história maravilhosa de como o maior inventor, mágico e chocolateiro do mundo se tornou o adorado Willy Wonka que conhecemos hoje.</p>
+
+            <a href="">Ir para o filme</a>
+
+        </div>
+        <div class="destaque-fadebottom"></div>
+    </div>
+    <!-- CATEGORIAS -->
+    <nav class="categorias">
+        <div class="cat-flex">
+            <button class="button button0 button1">Featured</button>
+            <button class="button button1">Ação</button>
+            <button class="button button1">Animação para adultos</button>
+            <button class="button button1">Aventura & Sobrevivência</button>
+            <button class="button button1">Comédia</button>
+            <button class="button button1">Policial</button>
+            <button class="button button1">Documentários</button>
+            <button class="button button1">Drama</button>
+            <button class="button button1">Fantasia & Ficção Científica</button>
+        </div>
+    </nav>
+
+    <!-- GRID-FILMES -->
+    <div class="container-filmes">
         <h3>Filmes para você</h3>
         <a href="/filmes/aquaman2/aquaman2.html">
-            <img src="/filmes/assets/aquaman 2.webp">
+            <img src="/filmes/assets/aquaman 2.webp" alt="">
         </a>
-        <a href="/filmes/aquaman/aquaman.html">
-            <img src ="/filmes/assets/aquaman.webp">
-        </a>
-        <a href="/filmes/bezouro-azul/index.html">
-            <img src="/filmes/assets/bezouro azul.webp">
-        </a>
-        <a href="">
-            <img src="/filmes/assets/charlie.webp">
-        </a>
-        <a href="">
-            <img src="/filmes/assets/interestellar.webp">
-        </a>
-        <a href="">
-            <img src="/filmes/assets/lobo de wall street.webp">
-        </a>
-        <a href="">
-            <img src="/filmes/assets/megatubarão.webp">
-        </a>
-        <a href="">
-            <img src="/filmes/assets/no hard feelings.webp">
-        </a>
-        <a href="">
-            <img src="/filmes/assets/O protetor.webp">
-        </a>
-        <a href="">
-            <img src="/filmes/assets/quem matou o charlie.webp">
-        </a>
-        <a href="">
-            <img src="/filmes/assets/wonka poster.webp">
-        </a>
-        <a href="">
-            <img src="/filmes/assets/spiderverso].webp">
-        </a>
+        <img src="/filmes/assets/aquaman.webp" alt="">
+        <img src="/filmes/assets/bezouro azul.webp" alt="">
+        <img src="/filmes/assets/charlie.webp" alt="">
+        <img src="/filmes/assets/interestellar.webp" alt="">
+        <img src="/filmes/assets/lobo de wall street.webp" alt="">
+        <img src="/filmes/assets/megatubarão.webp" alt="">
+        <img src="/filmes/assets/quem matou o charlie.webp" alt="">
+        <img src="/filmes/assets/O protetor.webp" alt="">
+        <img src="assets/no hard feelings.webp" alt="">
+        <img src="/filmes/assets/spiderverso].webp" alt="">
+        <img src="/filmes/assets/wonka poster.webp" alt="">
     </div>
+
 </body>
 
 </html>

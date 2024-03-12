@@ -11,14 +11,13 @@ body {
   display: flex;
   flex-flow: column nowrap;
   background: linear-gradient(
-  0deg, 
-  rgb(1, 0, 31) 70%, 
-  rgb(0, 1, 24) 80%, 
-  rgb(0, 0, 16) 100%)
-  fixed;
+      0deg,
+      rgb(1, 0, 31) 70%,
+      rgb(0, 1, 24) 80%,
+      rgb(0, 0, 16) 100%
+    )
+    fixed;
 }
-
-/* NAVBAR */
 
 header {
   width: 100%;
@@ -29,6 +28,7 @@ header {
   display: flex;
   position: fixed; /* Fixa o cabeçalho na parte superior da página */
   z-index: 1000;
+  backdrop-filter: blur(1px);
 }
 
 .nav-bar {
@@ -90,18 +90,13 @@ header {
 }
 
 /* DESTAQUE */
-.container-destaque img {
-  max-width: 100%;
-}
-
-.container-destaque{
-    position: relative; /* Adiciona posicionamento relativo para os elementos filhos com posicionamento absoluto */
-    background-image: url("/filmes/assets/wonka.webp");
-    background-size: cover;
-    background-position: center center;
-    color: white;
-    object-fit: contain;
-    height: 700px;
+.container-destaque {
+  position: relative; /* Adiciona posicionamento relativo para os elementos filhos com posicionamento absoluto */
+  background-image: url("/filmes/assets/wonka.webp");
+  background-size: cover;
+  color: white;
+  object-fit: contain;
+  height: 750px;
 }
 
 .destaque-description {
@@ -110,7 +105,7 @@ header {
   gap: 15px;
   flex-flow: column nowrap;
   justify-content: center;
-  margin: 18% 3%;
+  margin: 21% 3%;
   z-index: 2;
 }
 
@@ -124,9 +119,9 @@ header {
   gap: 20px;
 }
 
-#status-filme{
+#newepisodes {
   border: 2px solid white;
-  padding: 2px 4px;
+  padding: 2px;
   font-weight: bold;
 }
 
@@ -153,6 +148,7 @@ header {
   font-size: 18px;
 }
 
+/* Estilos para a div com fade na parte inferior */
 .destaque-fadebottom {
   position: absolute; /* Posicionamento absoluto em relação ao contêiner .container-destaque */
   bottom: 0; /* Alinha a div na parte inferior */
@@ -162,30 +158,66 @@ header {
   background-image: linear-gradient(
     180deg,
     transparent,
-    rgba(0, 0, 0, 0.816),
+    rgba(0, 0, 0, 0.8),
     #111
   ); /* Gradiente para o efeito de fade na parte inferior */
 }
-
-.grid-container-filmes{
+.cat-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+/* Botoes de categoria */
+.button {
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.button0 {
+  border: 2px solid white;
+}
+.button1 {
+  background-color: transparent;
+  color: white;
+}
+.button1:hover {
+  background-color: white;
+  color: black;
+}
+.container-filmes {
   display: grid;
-  grid-template-columns: 232px 232px 232px 232px;
+  gap: 20px;
+  grid-template-columns: 232px 232px 232px;
   grid-template-rows: 30px 348px 348px 348px;
-  grid-template-areas: 
-  "title title title title";
-  gap: 14px;
-  row-gap: 20px;
   align-content: center;
   justify-content: center;
-
+  margin-top: 50px;
+  grid-template-areas: "title title tile";
 }
-.grid-container-filmes a:hover{
-  border-style: solid;
-  border-color: aliceblue;
-  border-width: 2px;
-  padding: 2px;
-  border-radius: 5px;
+.container-filmes a {
+  grid-column: 1;
+  display: flex;
 }
-h3{
+.container-filmes img {
+  max-width: 100%;
+  width: 232px;
+  z-index: 0;
+  border-radius: 3px;
+  border: 3px solid transparent;
+}
+.container-filmes img:hover {
+  border: 3px solid white;
+}
+h3 {
   grid-area: title;
 }

@@ -1,224 +1,226 @@
 * {
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: "Roboto", sans-serif;
-  }
-  
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
 body {
-    height: 100vh;
-    overflow-x: hidden;
-    display: flex;
-    flex-flow: column nowrap;
-    background: linear-gradient(
-    0deg, 
-    rgb(1, 0, 31) 70%, 
-    rgb(0, 1, 24) 80%, 
-    rgb(0, 0, 16) 100%)
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  background: linear-gradient(
+      0deg,
+      rgb(1, 0, 31) 70%,
+      rgb(0, 1, 24) 80%,
+      rgb(0, 0, 16) 100%
+    )
     fixed;
-  }
-  
+}
+
 header {
-    width: 100%;
-    height: 70px;
-    align-items: center;
-    justify-content: space-around;
-    gap: 200px;
-    display: flex;
-    position: fixed; /* Fixa o cabeçalho na parte superior da página */
-    z-index: 1000;/
-  }
-  
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 200px;
+  display: flex;
+  position: fixed; /* Fixa o cabeçalho na parte superior da página */
+  z-index: 1000;
+  backdrop-filter: blur(1px);
+}
+
 .nav-bar {
-    display: flex;
-    flex-flow: row wrap;
-    font-weight: bold;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .nav-bar img {
-    display: flex;
-    justify-self: center;
-  }
-  
+  display: flex;
+  justify-self: center;
+}
+
 .nav-bar a {
-    text-decoration: none;
-  }
-  
+  text-decoration: none;
+}
+
 .icons-area {
-    display: flex;
-    gap: 25px;
-  }
-  
-  /* Estilo para diferentes tamanhos de imagens */
+  display: flex;
+  gap: 25px;
+}
+
+/* Estilo para diferentes tamanhos de imagens */
 #img-size-logo {
-    width: 33px;
-  }
+  width: 33px;
+}
 #img-size-search {
-    width: 25px;
-  }
+  width: 25px;
+}
 #img-size-save {
-    width: 25px;
-  }
+  width: 25px;
+}
 #img-size-user {
-    width: 28px;
-  }
-  
-  /* Estilo básico do botão da barra de navegação */
+  width: 28px;
+}
+
+/* Estilo básico do botão da barra de navegação */
 .button-navbar {
-    background-color: transparent;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    position: relative; /* Define como posicionado para corrigir o pseudo-elemento */
-  }
-  
-  /* Estilo do efeito de hover para o botão da barra de navegação */
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative; /* Define como posicionado para corrigir o pseudo-elemento */
+}
+
+/* Estilo do efeito de hover para o botão da barra de navegação */
 .button-navbar:hover::after {
-    content: ""; /* Pseudo-elemento para criar a linha */
-    position: absolute; /* Posicionamento absoluto em relação ao botão */
-    left: 0; /* Posiciona a linha no início do botão */
-    bottom: 0; /* Posiciona a linha na parte inferior do botão */
-    width: 100%; /* Largura da linha igual à largura do botão */
-    height: 2px; /* Altura da linha */
-    background-color: white; /* Cor da linha */
-  }
-  
-  /* DESTAQUE */
+  content: ""; /* Pseudo-elemento para criar a linha */
+  position: absolute; /* Posicionamento absoluto em relação ao botão */
+  left: 0; /* Posiciona a linha no início do botão */
+  bottom: 0; /* Posiciona a linha na parte inferior do botão */
+  width: 100%; /* Largura da linha igual à largura do botão */
+  height: 2px; /* Altura da linha */
+  background-color: white; /* Cor da linha */
+}
+
+/* DESTAQUE */
 .container-destaque {
-    position: relative; /* Adiciona posicionamento relativo para os elementos filhos com posicionamento absoluto */
-    background-image: url("/series/assets/TheBigBangTheory.jpg");
-    background-size: cover;
-    color: white;
-    object-fit: contain;
-    height: 750px;
-  }
-  
+  position: relative; /* Adiciona posicionamento relativo para os elementos filhos com posicionamento absoluto */
+  background-image: url("/series/assets/TheBigBangTheory.jpg");
+  background-size: cover;
+  color: white;
+  object-fit: contain;
+  height: 750px;
+}
+
 .destaque-description {
-    position: relative; /* Adiciona posicionamento relativo */
-    display: flex;
-    gap: 15px;
-    flex-flow: column nowrap;
-    justify-content: center;
-    margin: 21% 3%;
-    z-index: 2;
-  }
-  
+  position: relative; /* Adiciona posicionamento relativo */
+  display: flex;
+  gap: 15px;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: 21% 3%;
+  z-index: 2;
+}
+
 .destaque-description img {
-    width: 30%;
-  }
-  
+  width: 30%;
+}
+
 .description-top {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 #newepisodes {
-    border: 2px solid white;
-    padding: 2px;
-    font-weight: bold;
+  border: 2px solid white;
+  padding: 2px;
+  font-weight: bold;
 }
-  
+
 .description-top img {
-    width: 20px;
-    border: 1px solid white;
+  width: 20px;
+  border: 1px solid white;
 }
-  
+
 #maindescription {
-    width: 40%;
-    font-size: 20px;
-    color: rgb(203, 203, 203);
+  width: 40%;
+  font-size: 20px;
+  color: rgb(203, 203, 203);
 }
-  
+
 .destaque-description a {
-    text-decoration: none;
-    width: 140px;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(48, 48, 68);
-    padding: 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 18px;
+  text-decoration: none;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(48, 48, 68);
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
 }
-  
-  /* Estilos para a div com fade na parte inferior */
+
+/* Estilos para a div com fade na parte inferior */
 .destaque-fadebottom {
-    position: absolute; /* Posicionamento absoluto em relação ao contêiner .container-destaque */
-    bottom: 0; /* Alinha a div na parte inferior */
-    left: 0; /* Alinha a div à esquerda */
-    width: 100%; /* Largura igual à largura do contêiner */
-    height: 17rem; /* Altura da div fade-bottom */
-    background-image: linear-gradient(
-      180deg,
-      transparent,
-      rgba(0, 0, 0, 0.8),
-      #111
-    ); /* Gradiente para o efeito de fade na parte inferior */
+  position: absolute; /* Posicionamento absoluto em relação ao contêiner .container-destaque */
+  bottom: 0; /* Alinha a div na parte inferior */
+  left: 0; /* Alinha a div à esquerda */
+  width: 100%; /* Largura igual à largura do contêiner */
+  height: 17rem; /* Altura da div fade-bottom */
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(0, 0, 0, 0.8),
+    #111
+  ); /* Gradiente para o efeito de fade na parte inferior */
 }
 .cat-flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  /* Botoes de categoria */
-  .button {
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    color: black;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 20px;
-  }
-  .button0 {
-    border: 2px solid white;
-  }
-  .button1 {
-    background-color: transparent;
-    color: white;
-  }
-  .button1:hover {
-    background-color: white;
-    color: black;
-  }
-.container-series{
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 232px 232px 232px;
-    grid-template-rows: 30px 348px 348px 348px;
-    align-content: center;
-    justify-content: center;
-    margin-top: 50px;
-    grid-template-areas: "title title tile";
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
 }
-.container-series a{
-    grid-column: 1;
+/* Botoes de categoria */
+.button {
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 20px;
 }
-.container-series img{
-    max-width: 100%;
-    width: 232px;
-    z-index: 0;
-    border-radius: 3px;
-    border: 3px solid transparent;
+.button0 {
+  border: 2px solid white;
 }
-.container-series img:hover{
-    border: 3px solid white;
+.button1 {
+  background-color: transparent;
+  color: white;
 }
-h3{
-    grid-area: title;
+.button1:hover {
+  background-color: white;
+  color: black;
 }
-  /* TOP 5 */
+.container-series {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 232px 232px 232px;
+  grid-template-rows: 30px 348px 348px 348px;
+  align-content: center;
+  justify-content: center;
+  margin-top: 50px;
+  grid-template-areas: "title title tile";
+}
+.container-series a {
+  grid-column: 1;
+}
+.container-series img {
+  max-width: 100%;
+  width: 232px;
+  z-index: 0;
+  border-radius: 3px;
+  border: 3px solid transparent;
+}
+.container-series img:hover {
+  border: 3px solid white;
+}
+h3 {
+  grid-area: title;
+}
+/* TOP 5 */
 /* .container-top5 {
     margin: 2% 3%;
     padding-bottom: 20px;
@@ -282,7 +284,7 @@ h3{
     border: 3px solid white;
 }
    */
-  /* FILMES/SERIES RECENTES */
+/* FILMES/SERIES RECENTES */
 /*   
 .container-recentes {
     display: flex;
