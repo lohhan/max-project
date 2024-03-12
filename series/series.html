@@ -1,17 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/series/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Series - Max</title>
+   <link rel=" stylesheet" href="/series/style.css">
+
+   <!-- fontes -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <!-- --- -->
+
+   <link rel="shortcut icon" href="../user/imgs/fav.png" type="image/x-icon">
 </head>
 
 <body>
-  
+   <!-- NAVBAR -->
+   <header>
+      <div id="logo-max">
+         <a href="">
+            <img src="/navbar-assets/max-h-w-l.svg" alt="_blank">
+         </a>
+      </div>
+
+      <div class="nav-bar">
+         <a class="button-navbar" href="">Início</a>
+         <a class="button-navbar" href="">Séries</a>
+         <a class="button-navbar" href="">Filmes</p></a>
+         <a class="button-navbar" href="">
+            <img id="img-size-logo" src="/navbar-assets/hbo-logo.svg">
+         </a>
+         <a class="button-navbar" href="">Crianças & Família</p></a>
+      </div>
+
+      <div class="icons-area">
+         <a href="">
+            <img id="img-size-search" src="/navbar-assets/search-image.svg">
+         </a>
+         <a href="">
+            <img id="img-size-save" src="/navbar-assets/save-image.svg">
+         </a>
+         <a href="">
+            <img id="img-size-user" src="/navbar-assets/user-image.svg">
+         </a>
+      </div>
+   </header>
+
+   <!-- DESTAQUE -->
+   <div class="container-destaque">
+      <div class="destaque-description">
+         <img src="/series/assets/TheBigBangTheoryLogo.webp" alt="">
+
+         <div class="description-top">
+            <!-- <p id="newepisodes">Novos Episódios</p> -->
+            <img src="/series/assets/a12.jpg" alt="">
+            <p>12 temporadas</p>
+         </div>
+
+         <p id="maindescription">Combinando ciência e comédia com ousadia, a série acompanha dois amigos inteligentes que sabem tudo de física quântica, e nada de relações humanas.</p>
+
+         <a href="">Ir para a série</a>
+
+      </div>
+      <div class="destaque-fadebottom"></div>
+   </div>
+    <!-- CATEGORIAS -->
     <nav class="categorias">
         <div class="cat-flex">
             <button class="button button0 button1">Featured</button>
@@ -23,10 +82,93 @@
             <button class="button button1">Documentários</button>
             <button class="button button1">Drama</button>
             <button class="button button1">Fantasia & Ficção Científica</button>
-            <button class="button button1">Comida & Casa</button>
-            <button class="button button1">Crianças & Família</button>
-            <button class="button button1">Novelas</button>
         </div>
     </nav>
+    
+    <!-- GRID-SERIES -->
+    <div class="container-series">
+        <h3>Séries para você</h3>
+        <a href="/series/paginaserie/pagserie.html">
+            <img src="/series/assets/SeriesHBO/BigBang.webp" alt="">
+        </a>
+        <img src="/series/assets/SeriesHBO/Friends.webp" alt="">
+        <img src="/series/assets/SeriesHBO/TheOffice.webp" alt="">
+        <img src="/series/assets/SeriesHBO/Euphoria.webp" alt="">
+        <img src="/series/assets/SeriesHBO/GOT.webp" alt="">
+        <img src="/series/assets/SeriesHBO/GOT-HOD.webp" alt="">
+        <img src="/series/assets/SeriesHBO/RickAndMorty.webp" alt="">
+        <img src="/series/assets/SeriesHBO/LooneyTunes.webp" alt="">
+        <img src="/series/assets/SeriesHBO/UmMalucoNoPedaco.webp" alt="">
+        <img src="/series/assets/SeriesHBO/Tlu.webp" alt="">
+        <img src="/series/assets/SeriesHBO/Pacificador.webp" alt="">
+        <img src="/series/assets/SeriesHBO/Supernatural.webp" alt="">
+    </div>
+
+   <!-- TOP 5 -->
+   <!-- <div class="container-top5">
+      <div class="top5-title">
+         <h2>TOP 5</h2>
+         <p>SÉRIES DE HOJE</p>
+      </div>
+
+      <div class="top5-series">
+         <div>
+            <p>1</p>
+            <img src="/homepage/assets/top5/largadosepelados.png" alt="">
+         </div>
+
+         <div>
+            <p>2</p>
+            <img src="/homepage/assets/top5/ninjakanui.png" alt="">
+         </div>
+
+         <div>
+            <p>3</p>
+            <img src="/homepage/assets/top5/quilosmortais.png" alt="">
+         </div>
+
+         <div>
+            <p>4</p>
+            <img src="/homepage/assets/top5/youngsheldon.png" alt="">
+         </div>
+
+         <div>
+            <p>5</p>
+            <img src="/homepage/assets/top5/muquiranas.png" alt="">
+         </div>
+      </div>
+   </div> -->
+
+   <!-- FILMES/SERIES RECENTES -->
+   <!-- <div class="container-recentes">
+      <a href="">
+         <h2>Filmes Recentes</h2>
+      </a>
+
+      <div class="recentes-images">
+         <img src="/homepage/assets/filmesrecentes/wonka.png" alt="">
+         <img src="/homepage/assets/filmesrecentes/spiderman3.png" alt="">
+         <img src="/homepage/assets/filmesrecentes/analyzethis.png" alt="">
+         <img src="/homepage/assets/filmesrecentes/projetox.png" alt="">
+         <img src="/homepage/assets/filmesrecentes/aforçadamulher.png" alt="">
+         <img src="/homepage/assets/filmesrecentes/karatekid.png" alt="">
+      </div>
+   </div>
+
+   <div class="container-recentes">
+      <a href="">
+         <h2>Séries Recentes</h2>
+      </a>
+
+      <div class="recentes-images">
+         <img src="/homepage/assets/seriesrecentes/tokyovice.png" alt="">
+         <img src="/homepage/assets/seriesrecentes/irmaosaobra.png" alt="">
+         <img src="/homepage/assets/top5/largadosepelados.png" alt="">
+         <img src="/homepage/assets/seriesrecentes/oregime.png" alt="">
+         <img src="/homepage/assets/seriesrecentes/thetruthaboutjin.png" alt="">
+         <img src="/homepage/assets/seriesrecentes/amortedemenem.png" alt="">
+      </div>
+   </div> -->
 </body>
+
 </html>
