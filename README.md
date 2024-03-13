@@ -4,6 +4,9 @@ Bem-vindo ao projeto de recriação do site da plataforma Max! Este repositório
 ### Sobre o projeto
 Este projeto foi atribuído como um trabalho acadêmico da faculdade, com o objetivo de praticar e aprimorar nossas habilidades de layout e design de interfaces web. Inspirado na interface da nova plataforma de streaming Max, buscamos replicar a interface do site, desde a tela de usuários até a tela de filme modelo.
 
+### Visite o Nosso Site (View in Desktop)
+https://max-project-azure.vercel.app/
+
 ## Interface
 
 ### Tela de Escolha de Usuário
