@@ -99,7 +99,9 @@ header {
   object-fit: contain;
   height: 700px;
 }
-
+.container-destaque img {
+    max-width: 400px;
+}
 .destaque-description {
   position: relative; /* Adiciona posicionamento relativo */
   display: flex;
@@ -262,4 +264,29 @@ header {
 
 .recentes-images img:hover {
   border: 3px solid white;
+}
+/* FOOTER */
+
+
+.footer-direitos{
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+}
+.footer-icones{
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+}
+.footer-icones img{
+    max-width: 20px;
+    height: 100%;
+}
+.footer-detalhes{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    bottom: 20px;
+    gap: 10px;
+    margin: 10px;
 }

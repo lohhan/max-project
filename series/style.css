@@ -220,6 +220,31 @@ header {
 h3 {
   grid-area: title;
 }
+/* FOOTER */
+
+
+.footer-direitos{
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+}
+.footer-icones{
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+}
+.footer-icones img{
+    max-width: 20px;
+    height: 100%;
+}
+.footer-detalhes{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    bottom: 20px;
+    gap: 10px;
+    margin: 10px;
+}
 /* TOP 5 */
 /* .container-top5 {
     margin: 2% 3%;
