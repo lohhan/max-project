@@ -197,12 +197,12 @@ header {
 .container-series {
   display: grid;
   gap: 20px;
-  grid-template-columns: 232px 232px 232px;
+  grid-template-columns: 232px 232px 232px 232px;
   grid-template-rows: 30px 348px 348px 348px;
   align-content: center;
   justify-content: center;
   margin-top: 50px;
-  grid-template-areas: "title title tile";
+  grid-template-areas: "title title title";
 }
 .container-series a {
   grid-column: 1;
@@ -222,6 +222,9 @@ h3 {
 }
 /* FOOTER */
 
+footer{
+  margin-top: 20px;
+}
 
 .footer-direitos{
     display: flex;

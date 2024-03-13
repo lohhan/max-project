@@ -287,6 +287,9 @@
 }
 /* FOOTER */
 
+footer{
+  margin-top: 20px;
+}
 
 .footer-direitos{
     display: flex;
