@@ -11,11 +11,11 @@
     display: flex;
     flex-flow: column nowrap;
     background: linear-gradient(
-    0deg, 
-    rgb(1, 0, 31) 70%, 
-    rgb(0, 1, 24) 80%, 
-    rgb(0, 0, 16) 100%)
-    fixed;
+    0deg,
+    rgb(0, 0, 0) 70%,
+    rgb(0, 0, 0) 80%,
+    rgb(0, 0, 0) 100%
+  )
   }
   
   /* NAVBAR */
@@ -29,6 +29,7 @@
     display: flex;
     position: fixed; /* Fixa o cabeçalho na parte superior da página */
     z-index: 1000;
+    backdrop-filter: blur(1px);
   }
   
   .nav-bar {
@@ -179,5 +180,97 @@
 #genre{
     color: rgba(255, 255, 255, 0.7);
     font-size: 13px;
+}
+.container-detalhes {
+  margin: 2% 3%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+}
+
+.container-detalhes h2 {
+  font-size: 20px;
+}
+
+.detalhes-descricao {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+  margin: 5px;
+}
+
+.detalhes-descricao h2 {
+  font-size: 18px;
+}
+
+.detalhes-descricao p {
+  display: flex;
+  gap: 10px;
+  color: rgb(210, 210, 210);
+}
+
+/* COMENTÁRIOS */
+.container-comentario {
+  margin: 0% 3%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+}
+
+.container-comentario h2 {
+  font-size: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.formulario input {
+  width: 650px;
+  height: 80px;
+  background-color: rgb(32, 32, 32);
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 2px;
+}
+
+.formulario a {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  text-decoration: none;
+  width: 80px;
+  border: 2px solid rgb(32, 32, 32);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.formulario a:hover {
+  background-color: rgba(229, 229, 229, 0.26);
+}
+/* FOOTER */
+
+
+.footer-direitos{
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+}
+.footer-icones{
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+}
+.footer-icones img{
+    max-width: 20px;
+    height: 100%;
+}
+.footer-detalhes{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    bottom: 20px;
+    gap: 10px;
+    margin: 10px;
 }
   
