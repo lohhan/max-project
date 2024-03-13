@@ -1,185 +1,185 @@
 * {
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  body {
-    height: 100vh;
-    overflow-x: hidden;
-    display: flex;
-    flex-flow: column nowrap;
-    background: linear-gradient(
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  background: linear-gradient(
     0deg,
     rgb(0, 0, 0) 70%,
     rgb(0, 0, 0) 80%,
     rgb(0, 0, 0) 100%
-  )
-  }
-  
-  /* NAVBAR */
-  
-  header {
-    width: 100%;
-    height: 70px;
-    align-items: center;
-    justify-content: space-around;
-    gap: 200px;
-    display: flex;
-    position: fixed; /* Fixa o cabeçalho na parte superior da página */
-    z-index: 1000;
-    backdrop-filter: blur(1px);
-  }
-  
-  .nav-bar {
-    display: flex;
-    flex-flow: row wrap;
-    font-weight: bold;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  
-  .nav-bar img {
-    display: flex;
-    justify-self: center;
-  }
-  
-  .nav-bar a {
-    text-decoration: none;
-  }
-  
-  .icons-area {
-    display: flex;
-    gap: 25px;
-  }
-  
-  /* Estilo para diferentes tamanhos de imagens */
-  #img-size-logo {
-    width: 33px;
-  }
-  #img-size-search {
-    width: 25px;
-  }
-  #img-size-save {
-    width: 25px;
-  }
-  #img-size-user {
-    width: 28px;
-  }
-  
-  /* Estilo básico do botão da barra de navegação */
-  .button-navbar {
-    background-color: transparent;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    position: relative; /* Define como posicionado para corrigir o pseudo-elemento */
-  }
-  
-  /* Estilo do efeito de hover para o botão da barra de navegação */
-  .button-navbar:hover::after {
-    content: ""; /* Pseudo-elemento para criar a linha */
-    position: absolute; /* Posicionamento absoluto em relação ao botão */
-    left: 0; /* Posiciona a linha no início do botão */
-    bottom: 0; /* Posiciona a linha na parte inferior do botão */
-    width: 100%; /* Largura da linha igual à largura do botão */
-    height: 2px; /* Altura da linha */
-    background-color: white; /* Cor da linha */
-  }
-  
-  /* DESTAQUE */
-  .container-destaque img {
-    max-width: 100%;
-  }
-  
-  .container-destaque{
-      position: relative; /* Adiciona posicionamento relativo para os elementos filhos com posicionamento absoluto */
-      background-image: url("/filmes/bezouro-azul/assets/bezouro\ azul\ poster.webp");
-      background-size: cover;
-      background-position: center center;
-      color: white;
-      object-fit: contain;
-      height: 700px;
-  }
-  
-  .destaque-description {
-    position: relative; /* Adiciona posicionamento relativo */
-    display: flex;
-    gap: 15px;
-    flex-flow: column nowrap;
-    justify-content: center;
-    margin: 18% 3%;
-    z-index: 2;
-  }
-  
-  .destaque-description img {
-    width: 20%;
-  }
-  
-  .description-top {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  #status-filme{
-    border: 2px solid white;
-    padding: 2px 4px;
-    font-weight: bold;
-  }
-  
-  .description-top img {
-    width: 20px;
-    border: 1px solid white;
-  }
-  
-  #maindescription {
-    width: 40%;
-    font-size: 20px;
-    color: rgb(203, 203, 203);
-  }
-  
-  .destaque-description a {
-    text-decoration: none;
-    width: 250px;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(221, 221, 221);
-    padding: 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  .destaque-description a:hover {
-    background-color: rgb(255, 255, 255);
-  }
-  .destaque-description a img {
-    width: 12px;
-    height: 14px;
-    margin-right: 5px;
-  }
-  
-  .destaque-fadebottom {
-    position: absolute; /* Posicionamento absoluto em relação ao contêiner .container-destaque */
-    bottom: 0; /* Alinha a div na parte inferior */
-    left: 0; /* Alinha a div à esquerda */
-    width: 100%; /* Largura igual à largura do contêiner */
-    height: 17rem; /* Altura da div fade-bottom */
-    background-image: linear-gradient(
-      180deg,
-      transparent,
-      rgba(0, 0, 0, 0.816),
-      #111
-    ); /* Gradiente para o efeito de fade na parte inferior */
+  );
 }
-#genre{
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 13px;
+
+/* NAVBAR */
+
+header {
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 200px;
+  display: flex;
+  position: fixed; /* Fixa o cabeçalho na parte superior da página */
+  z-index: 1000;
+  backdrop-filter: blur(1px);
+}
+
+.nav-bar {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-bar img {
+  display: flex;
+  justify-self: center;
+}
+
+.nav-bar a {
+  text-decoration: none;
+}
+
+.icons-area {
+  display: flex;
+  gap: 25px;
+}
+
+/* Estilo para diferentes tamanhos de imagens */
+#img-size-logo {
+  width: 33px;
+}
+#img-size-search {
+  width: 25px;
+}
+#img-size-save {
+  width: 25px;
+}
+#img-size-user {
+  width: 28px;
+}
+
+/* Estilo básico do botão da barra de navegação */
+.button-navbar {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative; /* Define como posicionado para corrigir o pseudo-elemento */
+}
+
+/* Estilo do efeito de hover para o botão da barra de navegação */
+.button-navbar:hover::after {
+  content: ""; /* Pseudo-elemento para criar a linha */
+  position: absolute; /* Posicionamento absoluto em relação ao botão */
+  left: 0; /* Posiciona a linha no início do botão */
+  bottom: 0; /* Posiciona a linha na parte inferior do botão */
+  width: 100%; /* Largura da linha igual à largura do botão */
+  height: 2px; /* Altura da linha */
+  background-color: white; /* Cor da linha */
+}
+
+/* DESTAQUE */
+.container-destaque img {
+  max-width: 100%;
+}
+
+.container-destaque {
+  position: relative; /* Adiciona posicionamento relativo para os elementos filhos com posicionamento absoluto */
+  background-image: url("/filmes/bezouro-azul/assets/bezouro\ azul\ poster.webp");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  object-fit: contain;
+  height: 700px;
+}
+
+.destaque-description {
+  position: relative; /* Adiciona posicionamento relativo */
+  display: flex;
+  gap: 15px;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: 18% 3%;
+  z-index: 2;
+}
+
+.destaque-description img {
+  width: 20%;
+}
+
+.description-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#status-filme {
+  border: 2px solid white;
+  padding: 2px 4px;
+  font-weight: bold;
+}
+
+.description-top img {
+  width: 20px;
+  border: 1px solid white;
+}
+
+#maindescription {
+  width: 40%;
+  font-size: 20px;
+  color: rgb(203, 203, 203);
+}
+
+.destaque-description a {
+  text-decoration: none;
+  width: 250px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(221, 221, 221);
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.destaque-description a:hover {
+  background-color: rgb(255, 255, 255);
+}
+.destaque-description a img {
+  width: 12px;
+  height: 14px;
+  margin-right: 5px;
+}
+
+.destaque-fadebottom {
+  position: absolute; /* Posicionamento absoluto em relação ao contêiner .container-destaque */
+  bottom: 0; /* Alinha a div na parte inferior */
+  left: 0; /* Alinha a div à esquerda */
+  width: 100%; /* Largura igual à largura do contêiner */
+  height: 17rem; /* Altura da div fade-bottom */
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(0, 0, 0, 0.816),
+    #111
+  ); /* Gradiente para o efeito de fade na parte inferior */
+}
+#genre {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
 }
 .container-detalhes {
   margin: 2% 3%;
@@ -248,32 +248,42 @@
 .formulario a:hover {
   background-color: rgba(229, 229, 229, 0.26);
 }
+
 /* FOOTER */
 
-footer{
-  margin-top: 20px;
+footer {
+  margin-top: 100px;
+  font-size: 14px;
 }
 
-.footer-direitos{
-    display: flex;
-    justify-content: right;
-    margin-right: 10px;
+.footer-direitos {
+  display: flex;
+  justify-content: right;
+  margin-right: 20px;
 }
-.footer-icones{
-    display: flex;
-    margin: 10px;
-    gap: 10px;
+
+.footer-direitos p {
+  color: rgba(255, 255, 255, 0.498);
 }
-.footer-icones img{
-    max-width: 20px;
-    height: 100%;
+
+.footer-icones {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+  gap: 15px;
 }
-.footer-detalhes{
-    display: flex;
-    justify-content: end;
-    position: relative;
-    bottom: 20px;
-    gap: 10px;
-    margin: 10px;
+
+.footer-icones img {
+  max-width: 20px;
+  height: 100%;
 }
-  
+
+.footer-detalhes {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  bottom: 25px;
+  gap: 20px;
+  margin: 5px 20px;
+  font-weight: bold;
+}
